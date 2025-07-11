@@ -1,4 +1,4 @@
-# 🚀 Pipeline – Full Stack Authentication System
+# 🚀 Pipeline – Full Stack Chat System
 
 **Pipeline** is a full-stack authentication system built with modern web technologies. It includes a secure backend API powered by **Node.js**, **Express**, and **MongoDB**, and a clean, responsive frontend built with **React**, **Tailwind CSS**, and **Vite**.
 
