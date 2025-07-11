@@ -1,0 +1,67 @@
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillLogo {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #4a3b70;
+  }
+}
+
+@keyframes cycleAnimation {
+  0%,
+  25% {
+    stroke-dashoffset: 1500;
+    fill: transparent;
+  }
+  25%,
+  50% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  50%,
+  75% {
+    stroke-dashoffset: 0;
+    fill: #4a3b70;
+  }
+  75%,
+  100% {
+    stroke-dashoffset: 1500;
+    fill: transparent;
+  }
+}
+
+.logo-path {
+  animation:
+    dash 1.5s linear forwards,
+    fillLogo 0.75s ease-in forwards 1.5s,
+    cycleAnimation 4s linear infinite;
+}
+
+.logo-path:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.logo-path:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.logo-path:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.logo-path:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.logo-path:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.logo-path:nth-child(6) {
+  animation-delay: 0.8s;
+}

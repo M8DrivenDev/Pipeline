@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #f4effa;
+    --color-text: #03071e;
+    --color-first: #2f184b;
+    --color-second: #532b88;
+    --color-third: #9b72cf;
+    --color-fourth: #c8b1e4;
+    --color-fifth: #778da9;
+    --color-incoming-msg: #5e057e;
+  }
+  .dark {
+    --color-bg: #03071e;
+    --color-text: #f4effa;
+    --color-fourth: #2f184b;
+    --color-third: #532b88;
+    --color-second: #9b72cf;
+    --color-first: #c8b1e4;
+    --color-fifth: #1b263b;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-fifth);
+  transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-second);
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-first);
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
